@@ -184,6 +184,9 @@ int findmax(struct btree *root)
         lt=findmax(root->left);
         rt=findmax(root->right);
         if(lt>rt)
-???LINES MISSING
-???LINES MISSING
-???LINES MISSING
+		return lt+1;
+	else
+		return rt+1;
+    }
+}
+
